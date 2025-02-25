@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Parallax Header */
+.parallax-header {
+    height: 100vh;
+    background: url('assets/shiva-background.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Particle Effect */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Diya Section */
+.diya-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.diya-container {
+    position: relative;
+}
+
+.diya {
+    width: 100px;
+    height: 100px;
+    background: url('assets/diya-off.png') no-repeat center center/cover;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.diya:hover {
+    transform: scale(1.1);
+}
+
+#light-diya {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #ff9800;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#light-diya:hover {
+    background: #e68900;
+}
+
+.blessing {
+    display: none;
+    margin-top: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.blessing img {
+    width: 150px;
+    height: auto;
+}
+
+.blessing p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Feelings Section */
+.feelings-section {
+    padding: 50px 20px;
+    background: #111;
+}
+
+.feelings-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.our-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ff9800;
+    object-fit: cover;
+}
+
+.feelings-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.my-feelings,
+.wife-feelings {
+    margin-bottom: 20px;
+}
+
+.my-feelings h3,
+.wife-feelings h3 {
+    font-size: 1.8rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.my-feelings p,
+.wife-feelings p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* 3D Shiva Linga Section */
+.shiva-linga-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+#shiva-linga {
+    width: 100%;
+    height: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 50px;
+}
